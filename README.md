@@ -11,7 +11,7 @@ Follow these steps to get the Hangman game running on your local machine.
 
 1. Clone the Repository:
 clone this repository to your local machine using Git:
-https://github.com/Abhishek-703/Hangman-Game-.git
+https://github.com/Abhishek-703/Hangman-Game.git
 
 2. Navigate to the Code Directory:
 Make sure you are in the directory containing the game's source code. If you followed the suggested structure, this would be the /Code directory within the cloned repository.
