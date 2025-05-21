@@ -72,6 +72,21 @@ for (let i = 97; i <= 122; i++) {
     button.addEventListener("click", (e) => initGame(e.target, String.fromCharCode(i)));
 }
 
+document.addEventListener("keydown", (e) => {
+    if (!gameModal.classList.contains("show")) {
+        const key = e.key.toLowerCase();
+        if (/^[a-z]$/.test(key)) {
+            const buttons = keyboardDiv.querySelectorAll("button");
+            for (let button of buttons) {
+                if (button.innerText.toLowerCase() === key && !button.disabled) {
+                    button.click();
+                    break;
+                }
+            }
+        }
+    }
+});
+
 getRandomWord();
 playAgainBtn.addEventListener("click", getRandomWord);
   
