@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangman Game</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #297ccf, #22adbd);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    img {
+      background-color: #e5d5d6;
+      width: 200px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    }
+
+    button {
+      padding: 12px 30px;
+      font-size: 1.1em;
+      background-color: #27ae60;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/TITLE.png" alt="Hangman Image">
+    <p>Guess the word before the man is hanged!</p>
+    <a href="index.html" style="
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+"><button onclick="startGame()">Start Game</button></a>
+  </div>
+
+  <script>
+    function startGame() {
+      alert("Game Starting...");
+      // window.location.href = "game.html";
+    }
+  </script>
+</body>
+</html>
